@@ -76,6 +76,7 @@
   --color-text: #0b1216;
   --color-text-soft: #385262;
   --color-text-faint: #8ca2b1;
+  --main-border-color: #8798b4;
   --accent-blue: #2563eb;
   --accent-pink: #d946ef;
   --accent-amber: #f59e0b;
@@ -238,7 +239,7 @@ html[data-mode='dark'] {
   --btn-outline-hover-bg: rgba(37, 99, 235, 0.18);
   --main-bg: var(--color-bg);
   --mask-bg: rgba(2, 5, 12, 0.7);
-  --main-border-color: rgba(104, 126, 188, 0.42);
+  --main-border-color: rgba(124, 146, 183, 0.55);
 
   --text-color: var(--color-text);
   --text-muted-color: var(--color-text-soft);
@@ -571,7 +572,7 @@ header .post-desc {
 
 .site-footer {
   background: var(--color-bg-alt);
-  border-top: 1px solid var(--color-border);
+  border-top: 10px solid var(--main-border-color);
   color: var(--color-text-faint);
 }
 
