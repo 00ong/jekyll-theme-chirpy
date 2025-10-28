@@ -138,15 +138,8 @@
     }
   }
 
-  #archives li:nth-child(odd) {
-    background-image: linear-gradient(
-      to left,
-      rgb(26 26 30),
-      rgb(39 39 45),
-      rgb(39 39 45),
-      rgb(39 39 45),
-      rgb(26 26 30)
-    );
+  #archives .archive-entry:nth-child(odd) {
+    background: var(--archives-row-alt-bg);
   }
 
   /* stylelint-disable-next-line selector-id-pattern */
@@ -170,8 +163,8 @@
 
   .highlight,
   .highlight .w {
-    color: #d0d0d0;
-    background-color: #151515;
+    color: var(--code-color);
+    background-color: var(--highlight-bg-color);
   }
 
   .highlight .err {
@@ -218,7 +211,7 @@
 
   .highlight .gh {
     color: #6a9fb5;
-    background-color: #151515;
+    background-color: transparent;
     font-weight: bold;
   }
 
