@@ -46,8 +46,10 @@
 
 %link-hover {
   color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #d2603a;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
 }
 
 %link-color {
@@ -55,7 +57,10 @@
 }
 
 %link-underline {
-  border-bottom: 1px solid var(--link-underline-color);
+  text-decoration: underline;
+  text-decoration-color: var(--link-underline-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
 }
 
 %clickable-transition {
@@ -108,6 +113,7 @@
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
